@@ -1,0 +1,17 @@
+2023-10-06 00:02:36.387 [info] 
+
+
+
+
+2023-10-06 00:02:36.387 [info] Extension host agent started.
+2023-10-06 00:02:36.419 [info] Started initializing default profile extensions in extensions installation folder. file:///home/vagrant/.vscode-server/extensions
+2023-10-06 00:02:36.466 [info] [127.0.0.1][c2fd63a8][ExtensionHostConnection] New connection established.
+2023-10-06 00:02:36.468 [info] [127.0.0.1][c6cec359][ManagementConnection] New connection established.
+2023-10-06 00:02:36.481 [info] Completed initializing default profile extensions in extensions installation folder. file:///home/vagrant/.vscode-server/extensions
+2023-10-06 00:02:36.647 [info] [127.0.0.1][c2fd63a8][ExtensionHostConnection] <21773> Launched Extension Host Process.
+2023-10-06 00:02:49.608 [info] [127.0.0.1][c6cec359][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2023-10-06 00:02:49.680 [info] [127.0.0.1][c2fd63a8][ExtensionHostConnection] <21773> Extension Host Process exited with code: 0, signal: null.
+2023-10-06 00:02:49.681 [info] Cancelling previous shutdown timeout
+2023-10-06 00:02:49.681 [info] Last EH closed, waiting before shutting down
+2023-10-06 00:03:25.309 [warning] No ptyHost heartbeat after 6 seconds
+2023-10-06 00:07:49.683 [info] Last EH closed, shutting down

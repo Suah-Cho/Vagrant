@@ -1,0 +1,49 @@
+2023-10-10 05:31:23.778 [info] Log level: Info
+2023-10-10 05:31:23.778 [info] Validating found git in: "git"
+2023-10-10 05:31:23.778 [info] Using git "2.34.1" from "git"
+2023-10-10 05:31:23.778 [info] > git rev-parse --show-toplevel [5ms]
+2023-10-10 05:31:23.778 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-10-10 05:31:23.778 [info] > git rev-parse --show-toplevel [6ms]
+2023-10-10 05:31:23.778 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-10-10 05:31:23.778 [info] > git rev-parse --show-toplevel [12ms]
+2023-10-10 05:31:23.778 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-10-10 05:31:23.795 [info] > git rev-parse --show-toplevel [10ms]
+2023-10-10 05:31:23.795 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-10-10 05:31:23.807 [info] > git rev-parse --show-toplevel [4ms]
+2023-10-10 05:31:23.807 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-10-10 05:31:23.816 [info] > git rev-parse --show-toplevel [3ms]
+2023-10-10 05:31:23.816 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-10-10 05:31:27.612 [info] > git rev-parse --show-toplevel [4ms]
+2023-10-10 05:31:27.612 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-10-10 05:31:31.619 [info] > git rev-parse --show-toplevel [6ms]
+2023-10-10 05:31:31.620 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-10-10 06:18:51.646 [info] > git rev-parse --show-toplevel [23ms]
+2023-10-10 06:18:51.647 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-10-10 07:22:20.008 [info] > git rev-parse --show-toplevel [8ms]
+2023-10-10 07:22:20.008 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-10-10 07:24:23.684 [info] > git rev-parse --show-toplevel [5ms]
+2023-10-10 07:24:23.684 [info] fatal: not a git repository (or any of the parent directories): .git
+2023-10-10 07:54:32.042 [info] > git rev-parse --show-toplevel [8ms]
+2023-10-10 07:54:32.060 [info] > git rev-parse --git-dir --git-common-dir [6ms]
+2023-10-10 07:54:32.071 [info] Open repository: /home/vagrant
+2023-10-10 07:54:32.113 [info] No remotes found in the git config file.
+2023-10-10 07:54:32.118 [info] > git config --get commit.template [21ms]
+2023-10-10 07:54:32.119 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [11ms]
+2023-10-10 07:54:32.255 [info] > git status -z -uall [117ms]
+2023-10-10 07:54:32.364 [info] No remotes found in the git config file.
+2023-10-10 07:54:32.366 [info] > git config --get commit.template [16ms]
+2023-10-10 07:54:32.379 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [15ms]
+2023-10-10 07:54:32.938 [info] > git status -z -uall [552ms]
+2023-10-10 07:54:33.015 [info] > git check-ignore -v -z --stdin [12ms]
+2023-10-10 07:54:33.589 [info] > git show --textconv :hostname-service-nodeport.yaml [21ms]
+2023-10-10 07:54:33.599 [info] > git ls-files --stage -- /home/vagrant/hostname-service-nodeport.yaml [14ms]
+2023-10-10 07:54:38.856 [info] No remotes found in the git config file.
+2023-10-10 07:54:38.860 [info] > git config --get commit.template [18ms]
+2023-10-10 07:54:38.866 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [11ms]
+2023-10-10 07:54:38.889 [info] > git status -z -uall [13ms]
+2023-10-10 07:54:53.448 [info] > git ls-files --stage -- /home/vagrant/hostname-service-nodeport.yaml [10ms]
+2023-10-10 07:54:53.479 [info] > git show --textconv :hostname-service-nodeport.yaml [4ms]
+2023-10-10 07:55:04.810 [info] > git ls-files --stage -- /home/vagrant/hostname-service-nodeport.yaml [7ms]
+2023-10-10 07:55:04.839 [info] > git show --textconv :hostname-service-nodeport.yaml [10ms]
+2023-10-10 07:55:21.421 [info] > git ls-files --stage -- /home/vagrant/hostname-service-nodeport.yaml [6ms]
+2023-10-10 07:55:21.444 [info] > git show --textconv :hostname-service-nodeport.yaml [3ms]
