@@ -1,0 +1,19 @@
+2023-10-11 04:24:48.471 [info] Log level: Info
+2023-10-11 04:24:48.471 [info] Validating found git in: "git"
+2023-10-11 04:24:48.471 [info] Using git "2.34.1" from "git"
+2023-10-11 04:24:48.471 [info] > git rev-parse --show-toplevel [29ms]
+2023-10-11 04:24:48.482 [info] > git rev-parse --git-dir --git-common-dir [37ms]
+2023-10-11 04:24:48.513 [info] Open repository: /home/vagrant
+2023-10-11 04:24:48.554 [info] > git config --get commit.template [16ms]
+2023-10-11 04:24:48.575 [info] > git rev-parse --show-toplevel [25ms]
+2023-10-11 04:24:48.591 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [20ms]
+2023-10-11 04:24:48.612 [info] > git rev-parse --show-toplevel [23ms]
+2023-10-11 04:24:48.650 [info] > git rev-parse --show-toplevel [29ms]
+2023-10-11 04:24:48.737 [info] > git rev-parse --show-toplevel [51ms]
+2023-10-11 04:24:48.748 [info] > git status -z -uall [140ms]
+2023-10-11 04:24:48.818 [info] > git config --get commit.template [28ms]
+2023-10-11 04:24:48.842 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [26ms]
+2023-10-11 04:24:49.032 [info] > git status -z -uall [174ms]
+2023-10-11 04:24:49.676 [info] > git check-ignore -v -z --stdin [278ms]
+2023-10-11 04:24:49.778 [info] > git show --textconv :whoami-deployment.yaml [54ms]
+2023-10-11 04:24:49.786 [info] > git ls-files --stage -- /home/vagrant/whoami-deployment.yaml [40ms]

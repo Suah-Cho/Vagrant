@@ -1,0 +1,16 @@
+2023-10-11 04:24:47.220 [info] Extension host with pid 171539 started
+2023-10-11 04:24:47.228 [error] Error: EEXIST: file already exists, open '/home/vagrant/.vscode-server/data/User/workspaceStorage/bfec414c22379603b050109643970f5f/vscode.lock'
+2023-10-11 04:24:47.251 [info] Lock '/home/vagrant/.vscode-server/data/User/workspaceStorage/bfec414c22379603b050109643970f5f/vscode.lock': Could not acquire lock, checking if the file is stale.
+2023-10-11 04:24:47.265 [info] Lock '/home/vagrant/.vscode-server/data/User/workspaceStorage/bfec414c22379603b050109643970f5f/vscode.lock': The lock does not look stale, elapsed: 962 ms, giving up.
+2023-10-11 04:24:47.268 [error] Error: EEXIST: file already exists, open '/home/vagrant/.vscode-server/data/User/workspaceStorage/bfec414c22379603b050109643970f5f-1/vscode.lock'
+2023-10-11 04:24:47.302 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2023-10-11 04:24:47.343 [info] Lock '/home/vagrant/.vscode-server/data/User/workspaceStorage/bfec414c22379603b050109643970f5f-1/vscode.lock': Could not acquire lock, checking if the file is stale.
+2023-10-11 04:24:47.357 [info] Lock '/home/vagrant/.vscode-server/data/User/workspaceStorage/bfec414c22379603b050109643970f5f-1/vscode.lock': The pid 196179 appears to be gone.
+2023-10-11 04:24:47.357 [info] Lock '/home/vagrant/.vscode-server/data/User/workspaceStorage/bfec414c22379603b050109643970f5f-1/vscode.lock': Deleting a stale lock.
+2023-10-11 04:24:47.371 [info] Lock '/home/vagrant/.vscode-server/data/User/workspaceStorage/bfec414c22379603b050109643970f5f-1/vscode.lock': Lock acquired.
+2023-10-11 04:24:47.510 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2023-10-11 04:24:47.565 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2023-10-11 04:24:47.565 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2023-10-11 04:24:48.225 [info] Eager extensions activated
+2023-10-11 04:24:48.226 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2023-10-11 04:24:48.227 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
