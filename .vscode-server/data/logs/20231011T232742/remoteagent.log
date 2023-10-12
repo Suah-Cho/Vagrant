@@ -47,3 +47,10 @@
 2023-10-11 23:28:53.884 [warning] No ptyHost heartbeat after 6 seconds
 2023-10-11 23:32:55.214 [info] New EH opened, aborting shutdown
 2023-10-12 03:28:13.919 [warning] No ptyHost heartbeat after 6 seconds
+2023-10-12 04:32:14.364 [info] [127.0.0.1][2361c88c][ManagementConnection] New connection established.
+2023-10-12 04:32:14.375 [info] [127.0.0.1][6f06ef14][ExtensionHostConnection] New connection established.
+2023-10-12 04:32:14.413 [info] [127.0.0.1][6f06ef14][ExtensionHostConnection] <165238> Launched Extension Host Process.
+2023-10-12 04:37:19.037 [info] [127.0.0.1][bfe481a2][ExtensionHostConnection] <3466> Extension Host Process exited with code: 0, signal: null.
+2023-10-12 04:48:02.943 [warning] No ptyHost heartbeat after 6 seconds
+2023-10-12 05:03:04.929 [warning] No ptyHost heartbeat after 6 seconds
+2023-10-12 07:59:13.307 [warning] No ptyHost heartbeat after 6 seconds
