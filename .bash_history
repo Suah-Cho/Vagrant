@@ -217,3 +217,148 @@ git add .
 git status
 git commit -m "upload yaml files"
 git push origin master
+kubectl create deployment my-nginx --image=docker.io/nginx
+kubectl get pod
+kubectl expose deployment my-nginx --port 80 --type LoadBalancer
+kubectl get service
+kubectl delete deployment my-ngix
+kubectl delete deployment my-nginx
+kubectl delete service my-nginx
+kubectl get all
+kubectl get configmap kube-porxy -n kube-system -o yaml | sed -e "s/strictARP: false/strictARP: true/" |kubectl diff -f - -n kube-system
+kubectl get configmap kube-proxy -n kube-system -o yaml | sed -e "s/strictARP: false/strictARP: true/" |kubectl diff -f - -n kube-system
+kubectl get configmap kube-proxy -n kube-system -o yaml
+sed -e "s/strictARP: false/strictARP: true/"
+kubectl get configmap kube-proxy -n kube-system -o yaml | sed -e "s/strictARP: false/strictARP: true/" | kubectl diff -f - -n kube-system
+kubectl get configmap kube-proxy -n kube-system -o yaml | sed -e "s/strictARP: false/strictARP: true/" | kubectl apply -f - -n kube-system
+kubectl apply -f
+kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.13.11/config/manifests/metallb-native.yaml
+kubectl get all -n metallb-system
+kubectl apply -f routing-config.yaml -n metallb-system
+kubectl get all
+kubectl get IPAddressPool -n metallb-system
+kubectl create deployment my-nginx --image=docker.io/nginx
+kubectl get deployment,pod
+kubectl expose deployment my-nginx --port 80 --type LoadBalancer
+kubectl get service
+wget -q -O - http://10.0.0.30
+wget -q -O - http://10.0.0.10:31204
+cat hostname-deployment.yaml
+kubectl apply -f hostname-deployment.yaml 
+kubectl get deployment
+kubectl expose deployment hostname-deployment --port 80 --type LoadBalancer
+kubectl get service
+wget -q -O - http://10.0.0.31:80 | grep Hello
+kubectl delete service my-nginx
+kubectl delete service hostname-deployment
+kubectl delete deployment my-nginx
+kubectl delete deployment hostname-deployment
+kubectl delete namespace metallb-system
+kubectl get all
+kubectl get namespace
+kubectl apply -f whoami-deployment.yaml 
+kubectl apply -f whoami-service.yaml 
+kubectl get deploy,pod
+kubectl get all
+kubectl apply -f whoami-deployment.yaml 
+kubectl get all
+kubectl apply -f whoami-deployment.yaml 
+kubectl get all
+kubectl get pod
+kubectl apply -f whoami-deployment.yaml 
+kubectl get pod
+kubectl get all
+kubectl get deploy,pod,service
+kubectl delete -f whoami-deployment.yaml 
+kubectl apply -f whoami-deployment.yaml 
+kubectl get pod,deploy
+kubectl delete -f whoami-deployment.yaml 
+kubectl apply -f whoami-deployment.yaml 
+kubectl get pod,deploy
+kubectl describe whoami-deployment
+kubectl describe deployment whoami-flask-deployment
+kubectl get pod
+kubectl describe pod whoami-flask-deployment-fc55d5-78x9d
+kubectl apply -f whoami-deployment.yaml 
+kubectl delete -f whoami-deployment.yaml 
+kubectl apply -f whoami-deployment.yaml 
+kubectl get pod
+kubectl delete -f whoami-deployment.yaml 
+kubectl apply -f whoami-deployment.yaml 
+kubectl get pod
+kubectl delete -f whoami-deployment.yaml 
+kubectl apply -f whoami-deployment.yaml 
+kubectl get pod
+kubecdtl descirbe deployment whoami-flaks-deployment
+kubectl descirbe deployment whoami-flaks-deployment
+kubectl describe deployment whoami-flaks-deployment
+kubectl get deploy
+kubectl describe deployment whoami-flask-deployment
+kubectl get pod
+kubectl describe pod whoami-flask-deployment-fc55d5-2j4lh
+kubectl delete -f whoami-deployment.yaml 
+kubectl apply -f whoami-deployment.yaml 
+kubectl get pod
+kubectl apply -f whoami-service.yaml 
+kubectl get deploy,pod,service
+kubectl get IPAddressPool -n metallb-system
+kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.13.11/config/manifests/metallb-native.yaml
+kubectl get IPAddressPool -n metallb-system
+kubectl expose deployment whoami-flask --port 5000 --type LoadBalancer
+kubectl expose deployment whoami-flask-service --port 5000 --type LoadBalancer
+kubectl apply -f routing-config.yaml -n metallb-system
+kubectl get IPAddressPool -n metallb-system
+kubectl get all
+wget -q -O - http://10.0.0.30:31085
+wget -q -O - http://10.0.0.30:31085/whoareyou
+wget -q -O - http://10.0.0.30/whoareyou
+wget -q -O - http://10.0.0.30:5000/whoareyou
+kubectl apply -f whoami-deployment.yaml 
+wget -q -O - http://10.0.0.30:5000/whoareyou
+kubectl get all
+wget -q -O - http://10.0.0.30:5000/whoareyou
+kubectl apply -f whoami-deployment.yaml 
+kubectl get all
+wget -q -O - http://10.0.0.30:5000/whoareyou
+kubectl get all
+kubectl delete -f whoami-flask-deployment
+kubectl delete -f whoami-deployment.yaml
+kubectl delete -f whoami-service.yaml
+kubectl get all
+kubectl delete -f pod/whoami-flask-deployment-b64c85654-59tdx
+kubectl delete -f whoami-flask-deployment-b64c85654-59tdx
+kubectl get all
+kubectl get ns
+kubectl delete namespace metallb-system
+kubectl apply -f webserver1.yaml
+kubectl apply -f webserver2.yaml
+kubectl apply -f service1.yaml
+kubectl apply -f service2.yaml
+kubectl get service
+kubectl get pod -o wide
+curl 172.17.48.70:8080 --silent | grep Hello
+curl 172.17.51.19:9090 --silent | grep Hello
+kubectl apply -f ingress.yaml
+kubectl get ingress
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.8.2/deploy/static/provider/baremetal/deploy.yaml
+kubectl get all
+kubectl get all -n ingress-nginx
+kubectl get configmap kube-proxy -n kube-system -o yaml | sed -e "s/strictARP: false/strictARP: true/" | kubectl apply -f - -n kube-system
+kubectl get configmap kube-proxy -n kube-system -o yaml | sed -e "s/strictARP: false/strictARP: true/" | kubectl apply -f - -n kube-system
+kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.13.11/config/manifests/metallb-native.yaml
+kubectl apply -f routing-config.yaml -n metallb-system
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.8.2/deploy/static/provider/baremetal/deploy.yaml
+kubectl get all -n ingress-nginx
+kubectl get service -n ingress-nginx
+wget -q -O - http://www.test.com
+sudo vi /etc/hosts
+curl http://www.test.com/myservice --silent | grep Hello
+curl http://www.test.com/myservice:30253 --silent | grep Hello
+curl http://www.test.com:30253/myservice --silent | grep Hello
+curl http://www.test.com:30253/yourservice --silent | grep Hello
+kubectl get pod
+exit
+git add .
+git status
+git commit -m "20231011 commit"
+git push origin master

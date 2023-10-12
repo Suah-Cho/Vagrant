@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: webserver2
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: web2
+  template:
+    metadata:
+      labels:
+        app: web2
+    spec:
+      containers:
+      - name: web2
+        image: docker.io/alicek106/rr-test:echo-hostname
+        ports:
+        - containerPort: 80
