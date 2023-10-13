@@ -362,3 +362,222 @@ git add .
 git status
 git commit -m "20231011 commit"
 git push origin master
+git add .
+git status
+git commit -m "20231012"
+git push origin master
+git add .
+git commit -m "20231012"
+git push origin master
+kubectl get all
+kubectl apply -f whoami-deployment.yaml 
+kubectl apply -f whoami-service.yaml 
+kubectl get all
+wget -q -O - http://10.0.0.3:31803/whoami
+wget -q -O - http://10.0.0.3:31803/whoareyou
+kubectl apply -f whoami-service.yaml 
+kubectl get all
+wget -q -O - http://10.0.0.3:31803/whoareyou
+kubectl get -n namespace
+kubectl delete namespace metallb-system
+kubectl get configmap kube-proxy -n kube-system -o yaml |  sed -e "s/strictARP: false/strictARP: true/" |  kubectl apply -f - -n kube-system
+kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.13.11/config/manifests/metallb-native.yaml
+kubectl apply -f whoami-service.yaml 
+kubectl apply -f routing-config.yaml -n metallb-system
+kubectl get all
+wget -q -O - http:10.0.0.30:31803/whoareyou
+wget -q -O - http:10.0.0.30:80/whoareyou
+wget -q -O - http:10.0.0.30/whoareyou
+wget -q -O - http:10.0.0.30:5000/whoareyou
+kubectl apply -f whoami-service.yaml 
+wget -q -O - http:10.0.0.30:5000/whoareyou
+kubectl apply -f whoami-deployment.yaml 
+kubectl apply -f whoami-service.yaml 
+wget -q -O - http:10.0.0.30:5000/whoareyou
+kubectl get all
+wget -q -O - http:10.0.0.31:5000/whoareyou
+kubectl delete whoami-deployment.yaml 
+kubectl delete replicaset.apps/webservice1-76544dc89d
+kubectl delete replicaset.apps/webservice2-5b8d8b9544
+kubectl delete deployment.apps/webservice1
+kubectl delete deployment.apps/webservice2
+kubectl delete deployment.apps/whoami-deployment
+kubectl delete deployment.apps/whoami-flask-deployment
+kubectl get all
+kubectl delete
+kubectl delete service/service1 
+kubectl delete service/whoami-service 
+kubectl delete service/whoami-flask-service 
+kubectl delete service/service2 
+kubectl get all
+kubectl apply -f sample-deployment.yaml 
+kubectl get pod --show-labels
+kubectl apply -f sample-service-nodeport.yaml 
+kubectl get service
+wget -q -O -http://10.0.0.10:30168 | grep Hello
+wget -q -O - http://10.0.0.10:30168 | grep Hello
+wget -q -O - http://172.17.3.75:30168 | grep Hello
+wget -q -O - http://172.17.3.75:8080 | grep Hello
+kubectl apply -f sample-deployment-green.yaml 
+kubectl get pod
+kubectl get all
+kubectl get pod -o wide
+kubectl apply -f sample-service-nodeport.yaml 
+wget -q -O - http://10.0.0.10:30168 | grep Hello
+kubectl get service
+kubectl apply -f sample-deployment.yaml 
+kubectl apply -f sample-deployment-green.yaml 
+wget -q -O - http://10.0.0.10:30168 | grep Hello
+kubectl apply -f sample-deployment.yaml 
+kubectl apply -f sample-deployment-green.yaml 
+wget -q -O - http://10.0.0.10:30168 | grep Hello
+kubectl get all
+kubectl delete service/blue-green-service
+kubectl delete deployment.apps/sample-deployment-blue
+kubectl delete deployment.apps/sample-deployment-green
+kubectl get all
+kubectl delete namespace metallb-system
+kubctl get namespace
+kubectl get namespace
+ubectl get configmap kube-proxy -n kube-system -o yaml |     sed -e "s/strictARP: false/strictARP: true/" |     kubectl apply -f - -n kube-system
+kubectl get configmap kube-proxy -n kube-system -o yaml |     sed -e "s/strictARP: false/strictARP: true/" |     kubectl apply -f - -n kube-system
+kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.13.11/config/manifests/metallb-native.yaml
+kubectl get all -n namespace metallb
+kubectl get all -n metallb
+kubectl get all -n metallb-system
+kubectl apply -f routing-config.yaml 
+kubectl delete routing-config.yaml
+kubectl get all
+kubectl delete ipaddresspool.metallb.io/first-pool
+kubectl apply -f routing-config.yaml -n metallb-system
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/contr
+oller-v1.8.2/deploy/static/provider/baremetal/deploy.yaml
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/contr
+oller-v1.8.2/deploy/static/provider/baremetal/deploy.yaml
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/contr
+oller-v1.8.2/deploy/static/provider/baremetal/deploy.yaml
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.8.2/deploy/static/provider/baremetal/deploy.yaml
+kubectl get all -n ingress-nginx
+kubectl edit service ingress-nginx-controller -n ingress-nginx
+kubectl get service -n ingress-nginx
+kubectl apply -f production-deployment.yaml 
+kubectl apply -f production-service.yaml 
+kubectl apply -f production-ingress.yaml 
+kubectl get pod
+kubectl get service
+kubectl get ingress
+kubectl delete ingress web-ingress
+kubectl get ingress
+kubectl get service -n ingress-nginx
+sudo vi /etc/hosts
+wget -q -O - http://www.canary.com
+kubectl apply -f production-service.yaml 
+kubectl get service
+kubectl apply -f canary-deployment.yaml 
+kubectl apply -f canary-service.yaml 
+kubectl get all
+kubectl apply -f canary-ingress.yaml 
+kubectl get ingress
+kubectl get service -n ingress-nginx
+kubectl apply -f canary-ingress.yaml 
+kubectl delete ns ingress-nginx
+kubectl delete ns metallb-system
+kubectl get all
+kubectl delete deployment service/canary-service
+kubectl delete service/canary-service
+kubectl delete service/kubernetes
+kubectl get ns
+kubectl get leases.coordination.k8s.io -n kube-node-lease
+kubectl get all -n kube-public
+kubectl get all -n kube-system
+kubectl get pod --namespace default
+kubectl delete canary-deployment-76fb4d56cd-zk6kb
+kubectl delete production-deployment-768d775c57-vnmdr
+kubectl delete deployment production-deployment
+kubectl delete deployment canary-deployment
+kubectl get pod --namespace default
+kubectl get pod
+kubectl config get-contexts
+kubectl apply -f production-namespace.yaml 
+kubectl get namespace
+kubectl create namespace mynamespace
+kubectl get namespace
+kubeclt get serviceaccount,secret -n production
+kubectl get serviceaccount,secret -n production
+kubectl get serviceaccount,secrets -n production
+kubectl run -it test --image=docker.io/busybox --restart=Never --rm -n production /bin/sh
+kubectl apply -f hostname-deploy-syc-deploy-svc-ns.yaml 
+kubectl get all -n production
+kubectl run -it --rm debug --image=docker.io/busybox --restart=Never /bin/sh
+kubectl run -it --rm debug --image=docker.io/busybox --restart=Never -n production /bin/sh
+kubectl delete namespace production
+kubectl get ns
+kubectl api-resources --namespace
+kubectl api-resources --namespace=true
+kubectl api-resources --namespaced=false
+kubectl api-resources --namespaced=true
+kubectl create namespace test-env
+kubectl get ns
+kubectl get all
+kubectl config get-contexts
+kubectl config set-context --current --namespace=test-env
+kubectl config get-contexts
+kubectl get all
+kubectl config set-context --current --namespace=default
+kubectl delete namespace test-env
+kubectl get ns
+kubectl create configmap log-level-configmap --from-literal LOG_LEVEL=DEBUG
+kubectl create configmap config-k8s --from-literal k8s=kubernetes --from-literal container=docker
+kubectl get configmap
+kubectl descirbe configmap log-level-configmap
+kubectl describe configmap log-level-configmap
+kubectl get configmap log-level-configmap -o yaml
+kubectl apply -f cm-to-env-all.yaml 
+kubectl get pod
+kubectl delete cm-to-env-all.yaml 
+kubectl delete pod cm-to-env-all.yaml 
+kubectl delete pod cm-to-env-all 
+kubectl apply -f cm-to-env-all.yaml 
+kubectl get pod
+kubectl describe pod cm-to-env-all
+kubectl get pod
+kubectl describe pod cm-to-env-all
+kubectl apply -f cm-to-env-all.yaml 
+kubectl get pod
+kubectl apply -f cm-to-env-all.yaml 
+kubectl describe pod cm-to-env-all
+kubectl apply -f cm-to-env-all.yaml 
+kubectl delete pod cm-to-env-all
+kubectl get pod
+kubectl apply -f cm-to-env-all.yaml 
+kubectl get pod
+kubectl describe pod cm-to-env-all
+kubectl get pod
+kubectl describe pod cm-to-env-all
+kubectl get pod
+kubectl describe pod cm-to-env-all
+kubectl get pod
+kubectl exec cm-to-env-all -- env
+kubectl delete -f cm-to-env-all.yaml
+kubectl apply -f cm-to-env-selective.yaml 
+kubectl get pod
+kubectl exec cm-to-env-selective -- env
+kubectl delete -f cm-to-env-selective.yaml 
+kubectl apply -f cm-to-volume-all.yaml 
+kubectl delete pod cm-to-volume-all.yaml 
+kubectl apply -f cm-to-volume-all.yaml 
+kubectl delete -f cm-to-volume-all.yaml 
+kubectl apply -f cm-to-volume-all.yaml 
+kubectl get pod
+kubectl exec cm-to-volume-all -- ls /etc/config
+kubectl exec cm-to-volume-all -- /etc/config/container
+kubectl exec cm-to-volume-all -- cat /etc/config/container
+kubectl exec cm-to-volume-all cat /etc/config/k8s
+kubectl exec cm-to-volume-all -- cat /etc/config/k8s
+kubectl delete -f cm-to-volume-all.yaml 
+kubectl apply -f cm-to-volume-selective.yaml 
+kubectl get pod
+kubectl exec cm-to-volume-selective -- ls /etc/config
+kubectl exec cm-to-volume-selective -- cat /etc/config/k8s_fullname
+kubectl exec cm-to-volume-selective -- cat /etc/config/kis_fullname
+exit

@@ -1,0 +1,50 @@
+*
+* Visual Studio Code Server
+*
+* By using the software, you agree to
+* the Visual Studio Code Server License Terms (https://aka.ms/vscode-server-license) and
+* the Microsoft Privacy Statement (https://privacy.microsoft.com/en-US/privacystatement).
+*
+Server bound to 127.0.0.1:45549 (IPv4)
+Extension host agent listening on 45549
+
+[23:51:09] 
+
+
+
+
+[23:51:09] Extension host agent started.
+[23:51:10] [127.0.0.1][59184a88][ManagementConnection] New connection established.
+[23:51:10] [127.0.0.1][f0cf4a83][ExtensionHostConnection] New connection established.
+[23:51:10] [127.0.0.1][f0cf4a83][ExtensionHostConnection] <8529> Launched Extension Host Process.
+New EH opened, aborting shutdown
+[23:56:09] New EH opened, aborting shutdown
+[07:42:54] Getting Manifest... ms-python.python
+[07:42:58] Getting Manifest... ms-python.python
+[07:43:18] Installing extension: ms-python.python
+[07:43:21] Extensions is already requested to install ms-python.python
+[07:43:31] Getting Manifest... ms-python.vscode-pylance
+[07:43:40] Installing extension: ms-python.vscode-pylance ms-python.python
+[07:45:14] Extension signature verification failed with error 'ENOENT': ms-python.python
+[07:45:21] Extracted extension to file:///home/vagrant/.vscode-server/extensions/ms-python.python-2023.18.0: ms-python.python
+[07:45:21] Renamed to /home/vagrant/.vscode-server/extensions/ms-python.python-2023.18.0
+[07:45:21] Extracting extension completed. ms-python.python
+[07:45:27] Downloaded extension to file:///home/vagrant/.vscode-server/data/CachedExtensionVSIXs/3466a85a-bf9a-43df-93a8-ee11ad01c7b7
+[07:45:28] Installing extension: ms-python.vscode-pylance
+[07:45:28] Installing the extension without checking dependencies and pack ms-python.vscode-pylance
+[07:45:42] Extracted extension to file:///home/vagrant/.vscode-server/extensions/ms-python.vscode-pylance-2023.10.20: ms-python.vscode-pylance
+[07:45:42] Renamed to /home/vagrant/.vscode-server/extensions/ms-python.vscode-pylance-2023.10.20
+[07:45:42] Extracting extension completed. ms-python.vscode-pylance
+[07:45:42] Extension installed successfully: ms-python.vscode-pylance
+[07:45:46] Downloaded extension to file:///home/vagrant/.vscode-server/data/CachedExtensionVSIXs/33157a13-3953-44a1-90da-84356d1f5e60
+[07:45:47] Installing extension: ms-python.python
+[07:45:47] Installing the extension without checking dependencies and pack ms-python.python
+[07:45:47] Deleted existing extension from disk ms-python.python /home/vagrant/.vscode-server/extensions/ms-python.python-2023.18.0
+[07:45:56] Extracted extension to file:///home/vagrant/.vscode-server/extensions/ms-python.python-2023.18.0: ms-python.python
+[07:45:56] Renamed to /home/vagrant/.vscode-server/extensions/ms-python.python-2023.18.0
+[07:45:56] Extracting extension completed. ms-python.python
+[07:45:56] Extension installed successfully: ms-python.python
+[07:46:06] Extension signature verification failed with error 'ENOENT': ms-python.vscode-pylance
+[07:46:06] Extracting extension completed. ms-python.vscode-pylance
+[07:46:06] Extension installed successfully: ms-python.python
+[07:46:06] Extension installed successfully: ms-python.vscode-pylance

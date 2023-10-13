@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: taskque-deploy
+spec:
+  selector:
+    matchLabels:
+      app: taskque
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: taskque
+    spec:
+      containers:
+      - image: docker.io/rabbitmq
+        name: rabbitmq
+        ports:
+        - containerPort: 5672
+        resources:
+          limits:
+            cpu: 100m
+      imagePullSecrets:
+      - name: regcred
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: taskque-svc
+spec:
+  type: NodePort
+  ports:
+  - port: 5672
+    nodePort: 31672
+  selector:
+    app: taskque

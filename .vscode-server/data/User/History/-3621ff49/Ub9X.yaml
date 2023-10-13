@@ -1,0 +1,13 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: job-normal-job
+spec:
+  template:
+    spec:
+      containers:
+      - name: busybox
+        image: docker.io/busybox
+        command: ["sh", "-c", "sllep 5; exit0"]
+      restartPolicy: Never
+  completions: 6

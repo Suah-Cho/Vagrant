@@ -54,3 +54,8 @@
 2023-10-12 04:48:02.943 [warning] No ptyHost heartbeat after 6 seconds
 2023-10-12 05:03:04.929 [warning] No ptyHost heartbeat after 6 seconds
 2023-10-12 07:59:13.307 [warning] No ptyHost heartbeat after 6 seconds
+2023-10-12 08:19:02.150 [info] [127.0.0.1][2361c88c][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2023-10-12 08:19:02.305 [info] [127.0.0.1][6f06ef14][ExtensionHostConnection] <165238> Extension Host Process exited with code: 0, signal: null.
+2023-10-12 08:19:02.305 [info] Last EH closed, waiting before shutting down
+2023-10-12 08:19:20.934 [warning] No ptyHost heartbeat after 6 seconds
+2023-10-12 08:24:02.307 [info] Last EH closed, shutting down
