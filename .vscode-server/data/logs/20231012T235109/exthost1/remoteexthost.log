@@ -594,3 +594,5 @@
 2023-10-13 07:45:57.017 [info] ExtensionService#_doActivateExtension ms-python.python, startup: false, activationEvent: 'onLanguage:python'
 2023-10-13 07:46:23.986 [warning] [Decorations] CAPPING events from decorations provider vscode.git 15451
 2023-10-13 07:46:29.804 [warning] [Decorations] CAPPING events from decorations provider vscode.git 10049
+2023-10-13 08:36:50.944 [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onTerminalQuickFixRequest:ms-vscode.npm-command'
+2023-10-13 08:40:15.804 [warning] [Decorations] CAPPING events from decorations provider vscode.git 10003

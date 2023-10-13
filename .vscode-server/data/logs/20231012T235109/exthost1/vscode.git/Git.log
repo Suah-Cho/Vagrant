@@ -1836,3 +1836,102 @@
 2023-10-13 07:49:29.758 [info] > git ls-files --stage -- /home/vagrant/rabbitmq.yaml [9ms]
 2023-10-13 07:55:58.927 [info] > git show --textconv :job-initiator.py [26ms]
 2023-10-13 07:55:58.940 [info] > git ls-files --stage -- /home/vagrant/job-initiator.py [15ms]
+2023-10-13 08:34:08.329 [info] > git ls-files --stage -- /home/vagrant/job-initiator.py [21ms]
+2023-10-13 08:34:08.360 [info] > git cat-file -s 140836b85c51f086b025045613e483e202f0b22f [8ms]
+2023-10-13 08:34:08.406 [info] > git show --textconv :job-initiator.py [15ms]
+2023-10-13 08:34:15.783 [info] > git ls-files --stage -- /home/vagrant/job-initiator.py [38ms]
+2023-10-13 08:34:15.803 [info] > git cat-file -s 140836b85c51f086b025045613e483e202f0b22f [6ms]
+2023-10-13 08:34:15.837 [info] > git show --textconv :job-initiator.py [13ms]
+2023-10-13 08:35:45.206 [info] > git ls-files --stage -- /home/vagrant/job-initiator.py [20ms]
+2023-10-13 08:35:45.233 [info] > git cat-file -s 140836b85c51f086b025045613e483e202f0b22f [5ms]
+2023-10-13 08:35:45.281 [info] > git show --textconv :job-initiator.py [19ms]
+2023-10-13 08:39:00.717 [info] > git check-ignore -v -z --stdin [42ms]
+2023-10-13 08:39:02.952 [info] > git check-ignore -v -z --stdin [35ms]
+2023-10-13 08:39:04.705 [info] > git check-ignore -v -z --stdin [60ms]
+2023-10-13 08:40:15.213 [info] > git add -A -- . [581ms]
+2023-10-13 08:40:15.375 [info] > git -c user.useConfigOnly=true commit --quiet [120ms]
+2023-10-13 08:40:15.375 [info] Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: no email was given and auto-detection is disabled
+2023-10-13 08:40:15.407 [info] > git config --get-all user.name [5ms]
+2023-10-13 08:40:15.437 [info] > git config --get commit.template [13ms]
+2023-10-13 08:40:15.445 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [9ms]
+2023-10-13 08:40:15.580 [info] > git status -z -uall [117ms]
+2023-10-13 08:40:17.330 [info] > git config --get commit.template [61ms]
+2023-10-13 08:40:17.331 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [9ms]
+2023-10-13 08:40:17.454 [info] > git status -z -uall [101ms]
+2023-10-13 08:40:17.605 [info] > git ls-files --stage -- /home/vagrant/job-initiator.py [12ms]
+2023-10-13 08:40:17.631 [info] > git cat-file -s 140836b85c51f086b025045613e483e202f0b22f [9ms]
+2023-10-13 08:40:17.704 [info] > git show --textconv :job-initiator.py [22ms]
+2023-10-13 08:40:18.088 [info] > git check-ignore -v -z --stdin [7ms]
+2023-10-13 08:40:22.439 [info] > git -c user.useConfigOnly=true commit --quiet [93ms]
+2023-10-13 08:40:22.440 [info] Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: no email was given and auto-detection is disabled
+2023-10-13 08:40:22.459 [info] > git config --get-all user.name [3ms]
+2023-10-13 08:40:22.518 [info] > git config --get commit.template [35ms]
+2023-10-13 08:40:22.533 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [24ms]
+2023-10-13 08:40:22.671 [info] > git status -z -uall [120ms]
+2023-10-13 08:40:22.712 [info] > git config --get commit.template [17ms]
+2023-10-13 08:40:22.714 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [3ms]
+2023-10-13 08:40:22.860 [info] > git status -z -uall [112ms]
+2023-10-13 08:40:26.272 [info] > git ls-files --stage -- /home/vagrant/job-initiator.py [9ms]
+2023-10-13 08:40:26.305 [info] > git cat-file -s 140836b85c51f086b025045613e483e202f0b22f [5ms]
+2023-10-13 08:40:26.355 [info] > git show --textconv :job-initiator.py [22ms]
+2023-10-13 08:40:27.903 [info] > git config --get commit.template [21ms]
+2023-10-13 08:40:27.923 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [23ms]
+2023-10-13 08:40:28.053 [info] > git status -z -uall [111ms]
+2023-10-13 08:40:33.101 [info] > git config --get commit.template [22ms]
+2023-10-13 08:40:33.107 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [8ms]
+2023-10-13 08:40:33.239 [info] > git status -z -uall [112ms]
+2023-10-13 08:40:38.283 [info] > git config --get commit.template [20ms]
+2023-10-13 08:40:38.289 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [6ms]
+2023-10-13 08:40:38.394 [info] > git status -z -uall [84ms]
+2023-10-13 08:40:57.120 [info] > git config --get commit.template [14ms]
+2023-10-13 08:40:57.124 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [5ms]
+2023-10-13 08:40:57.227 [info] > git status -z -uall [88ms]
+2023-10-13 08:41:02.272 [info] > git config --get commit.template [17ms]
+2023-10-13 08:41:02.276 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [6ms]
+2023-10-13 08:41:02.382 [info] > git status -z -uall [90ms]
+2023-10-13 08:41:07.436 [info] > git config --get commit.template [24ms]
+2023-10-13 08:41:07.448 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [12ms]
+2023-10-13 08:41:07.567 [info] > git status -z -uall [97ms]
+2023-10-13 08:41:12.604 [info] > git config --get commit.template [17ms]
+2023-10-13 08:41:12.608 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [6ms]
+2023-10-13 08:41:12.708 [info] > git status -z -uall [82ms]
+2023-10-13 08:41:13.370 [info] > git check-ignore -v -z --stdin [20ms]
+2023-10-13 08:41:17.760 [info] > git config --get commit.template [19ms]
+2023-10-13 08:41:17.763 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [4ms]
+2023-10-13 08:41:17.869 [info] > git status -z -uall [92ms]
+2023-10-13 08:41:22.925 [info] > git config --get commit.template [33ms]
+2023-10-13 08:41:22.939 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [15ms]
+2023-10-13 08:41:23.059 [info] > git status -z -uall [106ms]
+2023-10-13 08:41:28.108 [info] > git config --get commit.template [20ms]
+2023-10-13 08:41:28.114 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [7ms]
+2023-10-13 08:41:28.233 [info] > git status -z -uall [108ms]
+2023-10-13 08:41:31.783 [info] > git show --textconv :.git/COMMIT_EDITMSG [26ms]
+2023-10-13 08:41:31.801 [info] > git ls-files --stage -- /home/vagrant/.git/COMMIT_EDITMSG [24ms]
+2023-10-13 08:41:32.156 [info] > git check-ignore -v -z --stdin [15ms]
+2023-10-13 08:41:32.584 [info] > git ls-files --stage -- /home/vagrant/.git/COMMIT_EDITMSG [13ms]
+2023-10-13 08:41:32.618 [info] > git show --textconv :.git/COMMIT_EDITMSG [10ms]
+2023-10-13 08:41:55.497 [info] > git check-ignore -v -z --stdin [13ms]
